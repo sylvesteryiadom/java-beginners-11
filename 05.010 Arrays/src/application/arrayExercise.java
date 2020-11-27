@@ -17,9 +17,17 @@ public class arrayExercise {
 		System.out.print("You entered: ");
 		System.out.println(Arrays.toString(numbersArray));
 		int total = 0;
-		for (int i = 0; i < numbersArray.length; i++) {
-			total += numbersArray[i];
+//		for (int i = 0; i < numbersArray.length; i++) {
+//			total += numbersArray[i];
+//		}
+		// TEST
+		for (int member : numbersArray) {
+			total += member;
 		}
+
+//		Arrays.stream(numbersArray).forEach(number -> {
+//			total += number;
+//		});
 		System.out.printf("Your total is:  %d ", total);
 
 		scan.close();
