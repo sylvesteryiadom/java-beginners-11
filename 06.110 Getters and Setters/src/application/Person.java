@@ -1,22 +1,25 @@
 package application;
 
 public class Person {
+	// instance variables
 	String name;
 	int age;
-	
+
+	/** SETTERS */
 	void setName(String theName) {
 		name = theName;
 	}
-	
+
 	void setAge(int theAge) {
 		age = theAge;
 	}
-	
+
+	/** GETTERS (RETURNERS) */
 	String getName() {
-		return name;
+		return this.name;
 	}
-	
+
 	int getAge() {
-		return age;
+		return this.age;
 	}
 }

@@ -1,17 +1,14 @@
 package application;
 
 public class Menu {
+	String[] option = { "View database", "View items", "Delete items", "Quit program" };
 
-	String[] options = { "Add an item", "View items", "Delete an item", "Quit the program" };
-
-	String get() {
-
-		String menuText = "Choose an option:\n";
-
-		for (int i = 0; i < options.length; i++) {
-			menuText += String.format(" %d. %s\n", i, options[i]);
+	String getDisplay() {
+		String sentence = "";
+		System.out.println("Choose an option: ");
+		for (int i = 0; i < option.length; i++) {
+			sentence += String.format("%d. %s\n", (i + 1), option[i]);
 		}
-
-		return menuText;
+		return sentence;
 	}
 }
