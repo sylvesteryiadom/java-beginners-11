@@ -1,29 +1,30 @@
 package application;
 
 public class Hangman {
-	
-	private boolean running = true;
-	
+	// instance variables
+	private boolean running = false;
+	RandomWord word = new RandomWord();
+
+	// run method
 	public void run() {
-		
-		do {
+
+		do { // loop to display question to user
 			displayWord();
 			getUserInput();
 			checkUserInput();
-		} while(running);
-	}
-	
-	private void checkUserInput() {
-		System.out.println("checkUserInput");
-		
+		} while (running);
+
 	}
 
-	private void getUserInput() {
+	public void displayWord() {
+		System.out.println(word.toString());
+	}
+
+	public void getUserInput() {
 		System.out.println("getUserInput");
-		
 	}
 
-	void displayWord() {
-		System.out.println("displayWord");
+	public void checkUserInput() {
+		System.out.println("checkUserInput");
 	}
 }
