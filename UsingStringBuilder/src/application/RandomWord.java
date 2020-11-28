@@ -21,7 +21,7 @@ public class RandomWord {
 		StringBuilder sb = new StringBuilder();
 		for (char c : characters) { // Ternary operator
 			sb = (c == '\u0000') ? sb.append('_') : sb.append(c);
-			sb.append(' '); // adding spaces in tbetween characters
+			sb.append(' '); // adding spaces intbetween characters
 		}
 		return sb.toString();
 	}
