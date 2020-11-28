@@ -6,12 +6,12 @@ public class Person {
 	int age;
 
 	/** SETTERS */
-	void setName(String theName) {
-		name = theName;
+	void setName(String name) {
+		this.name = name;
 	}
 
-	void setAge(int theAge) {
-		age = theAge;
+	void setAge(int age) {
+		this.age = age;
 	}
 
 	/** GETTERS (RETURNERS) */
