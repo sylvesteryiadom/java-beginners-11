@@ -39,4 +39,9 @@ public class Hangman {
 //		String c;
 //		word.checkInput(c)
 	}
+
+	public void close() {
+		// close the scanner object
+		scanner.close();
+	}
 }
