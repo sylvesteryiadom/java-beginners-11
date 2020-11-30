@@ -33,11 +33,10 @@ public class RandomWord {
 				characters[i] = c;
 				return true;
 			}
+
 		}
 		return false;
 	}
-
-	boolean workisComplete = false;
 
 	public boolean isComplete() {
 		for (char c : characters) {
@@ -53,8 +52,8 @@ public class RandomWord {
 
 	}
 
-	public String getWord() { // getter
-		return this.chosenWord;
+	public boolean checkLetter() {
+		return true;
 	}
 
 }
